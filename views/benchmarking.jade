@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1 Qual e a socia media perfomance do seu grupo de pesquisa?
+  div#bar-example
+
+  script(type='text/javascript').
+    var rCenter = {
+      label: '#{idea.name}',
+      value: #{idea.likes[0].count}
+    };
+    console.log(rCenter);
+  script(src='../javascripts/datanalysis.js')
